@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 20px;
+            width: 700px;
+            max-width: 100%;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            margin-right: 2px;
+        }
+        .profile-details {
+            flex: 1;
+            line-height: 1.5;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .profile-header img {
+            width: 300px;
+            height: 300px;
+            background-color: #ccc;
+        }
+        .profile-info {
+            margin-left: 20px;
+        }
+        .profile-info h1 {
+            margin: 0;
+        }
+
+        .categories {
+            text-align: right;
+        }
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .profile-info {
+            margin: 20px 0;
+        }
+        .attachments {
+            margin-top: 20px;
+        }
+        .attachments img {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .attachments a {
+            display: block;
+            text-decoration: none;
+            color: blue;
+        }
+        .media, .thumbnails {
+            margin-top: 20px;
+        }
+        .media .bar {
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .media .bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background-color: green;
+        }
+        .thumbnails {
+            display: flex;
+        }
+        .thumbnails .thumb {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            margin-right: 10px;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        video {
+            width: 200px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <legend>TUGAS PROFIL</legend>
+    <div class="profile-header">
+        <img src="ikal.jpeg.jpg" alt="Profile Image">
+        <div class="profile-info">
+            <p><strong>Haikal Pilar</strong></p>
+            <p>Jl. Jamuju No 234</p>
+            <p>Jawa barat, Depok</p>
+            <p>Sukmajaya</p>
+            <p>Gmail: <a href="haikalpilar1@gmail.com">haikalpilar1@gmail.com</a></p>
+            <p>Telephone: 0896-3584-1120</p>
+        </div>
+        <div class="categories">
+            <strong>Lategori</strong>
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>dolor sit</li>
+                <li>amet</li>
+                <li>dolor sit</li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <fieldset>
+        <legend>Deskripsi Tentang saya</legend>
+        <div class="description">
+            <p>Saya adalah mahasiswa Sekolah Tinggi Teknologi Nurul fikri (STT NF). Saya lulusan tahun 2024 asal sekolah saya SMK Raflesia dengan Jurusan Rekayasa perangkat lunak (RPL).</p>
+            <p>Pengalaman saya pernah bekerja selama 3 bulan di dinkes walikota depok sebagai pendata pasien pada tahun 2023 dan hobi saya desain grafis dan bermain game.</p>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        
+        <div class="video-container">
+            <strong>Video:</strong>
+            <video controls>
+                <source src="IKALVID.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="attachments">
+            <strong>FOTO :</strong>
+            <img src="foto1.jpg" alt="Attachment 1">
+            <img src="foto2.jpg" alt="Attachment 2">
+            <img src="foto3.jpg" alt="Attachment 3">
+            <img src="foto4.jpg" alt="Attachment 4">
+        
+    </fieldset>
+    <fieldset>
+        <div class="attachments">
+            <a href="https://drive.google.com/uc?export=download&id=1S6djDkzIO8qpF9ojz7cEx8wk0ENpS_QW">DOWNLOAD FOTO 1</a>
+            <a href="https://drive.google.com/uc?export=download&id=1mYYL9vZLTqxRPHtof4Y5PH8okH2Bk5Ke">DOWNLOAD FOTO 2</a>
+            <a href="https://drive.google.com/uc?export=download&id=1Jf19IZL7fsHbfo4iDA8QIYywmq4rs78W">DOWNLOAD FOTO 3</a>
+            <a href="https://drive.google.com/uc?export=download&id=1K9SZ9YERrp2c0D9Keraik443FlqT81qI">DOWNLOAD FOTO 4</a>
+    </fieldset>
+</body>
+</html>
